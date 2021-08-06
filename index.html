@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Calculator app</title>
+</head>
+
+<body>
+
+  <div class="Main" id="Main">
+    <div class="header">
+      <div class="heading" id="heading">
+        Calculator
+      </div>
+
+      <div class="toggle-btn">
+        THEME
+        <input type="checkbox" id="toggle" />
+        <label for="toggle"></label>
+      </div>
+    </div>
+
+
+    <div class="expression" id="expression">
+      <!-- display last expression calculated -->
+    </div>
+    <div class="output" id="output1">
+      0
+    </div>
+
+    <div class="input" id="input1">
+      <div class="myButton" onclick="Input(7)">7</div>
+      <div class="myButton" onclick="Input(8)">8</div>
+      <div class="myButton" onclick="Input(9)">9</div>
+      <div class="myButton delete" id="delete" onclick="Delete()">DEL</div>
+
+      <div class="myButton" onclick="Input(4)">4</div>
+      <div class="myButton" onclick="Input(5)">5</div>
+      <div class="myButton" onclick="Input(6)">6</div>
+      <div class="myButton" id="add" onclick="Add()">+</div>
+
+      <div class="myButton" onclick="Input(1)">1</div>
+      <div class="myButton" onclick="Input(2)">2</div>
+      <div class="myButton" onclick="Input(3)">3</div>
+      <div class="myButton" id="subtract" onclick="Subtract()">-</div>
+
+      <div class="myButton" onclick="Decimal()">.</div>
+      <div class="myButton" onclick="Input(0)">0</div>
+      <div class="myButton" id="divide" onclick="Divide()">/</div>
+      <div class="myButton" id="multiply" onclick="Multiply()">*</div>
+
+      <div class="myButton reset" id="reset" onclick="Reset()">RESET</div>
+      <div class="myButton equal" id="calculate" onclick="Calculate()">=</div>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Coded by <a href="https://github.com/onlykingKD/Simple-Calculator">@onlykingKD</a>.
+  </div>
+
+</body>
+
+</html>
