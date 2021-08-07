@@ -199,6 +199,38 @@ function removeActive() {
 }
 
 
+// Keyboard Input
+
+document.addEventListener("keydown", e => {
+    if (e.key == " ") Reset();
+    else
+        KeyPress(e.key);
+});
+
+function KeyPress(key) {
+
+    switch (key) {
+        case "1": Input(1); break;
+        case "2": Input(2); break;
+        case "3": Input(3); break;
+        case "4": Input(4); break;
+        case "5": Input(5); break;
+        case "6": Input(6); break;
+        case "7": Input(7); break;
+        case "8": Input(8); break;
+        case "9": Input(9); break;
+        case "0": Input(0); break;
+        case ".": Decimal(); break;
+        case "+": Add(); break;
+        case "-": Subtract(); break;
+        case "*": Multiply(); break;
+        case "/": Divide(); break;
+        case "Enter": Calculate(); break;
+        case "Backspace": Delete(); break;  
+    }
+}
+
+
 
 // Theme changer    
 
